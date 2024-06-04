@@ -5,6 +5,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import millaav.quantumupgrade.common.CommonProxy;
 
 import static gravisuite.GraviSuite.proxy;
 
@@ -18,10 +19,10 @@ import static gravisuite.GraviSuite.proxy;
 public class QuantumUpgrade {
     @SidedProxy(clientSide = "millaav.quantumupgrade.client.ClientProxy",
             serverSide = "millaav.quantumupgrade.common.CommonProxy")
-//    public static CommonProxy proxy;
+    public static CommonProxy proxy;
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-//        proxy.preInit(event);
+        proxy.preInit(event);
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
