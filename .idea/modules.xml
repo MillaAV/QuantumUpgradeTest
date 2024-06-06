@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuantumUpgrade.api.iml" filepath="$PROJECT_DIR$/.idea/modules/QuantumUpgrade.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuantumUpgrade.main.iml" filepath="$PROJECT_DIR$/.idea/modules/QuantumUpgrade.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuantumUpgrade.test.iml" filepath="$PROJECT_DIR$/.idea/modules/QuantumUpgrade.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuntumUpgrade.api.iml" filepath="$PROJECT_DIR$/.idea/modules/QuntumUpgrade.api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuntumUpgrade.main.iml" filepath="$PROJECT_DIR$/.idea/modules/QuntumUpgrade.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/QuntumUpgrade.test.iml" filepath="$PROJECT_DIR$/.idea/modules/QuntumUpgrade.test.iml" />

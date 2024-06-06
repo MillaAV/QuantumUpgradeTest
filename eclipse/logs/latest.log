@@ -1,44 +1,25 @@
-[11:31:08] [main/INFO]: Setting user: Player563
-[11:31:09] [Client thread/INFO]: LWJGL Version: 2.9.1
-[11:31:17] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:quantumupgrade
-[11:31:19] [Sound Library Loader/INFO]: Sound engine started
-[11:31:20] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[11:31:20] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[11:31:20] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:quantumupgrade
-[11:31:22] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
-[11:31:22] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[11:31:22] [Sound Library Loader/INFO]: Sound engine started
-[11:32:03] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[11:32:03] [Server thread/INFO]: Generating keypair
-[11:32:03] [Server thread/INFO]: Converting map!
-[11:32:03] [Server thread/INFO]: Scanning folders...
-[11:32:03] [Server thread/INFO]: Total conversion count is 0
-[11:32:03] [Server thread/INFO]: Preparing start region for level 0
-[11:32:04] [Server thread/INFO]: Preparing spawn area: 27%
-[11:32:05] [Server thread/INFO]: Preparing spawn area: 57%
-[11:32:07] [Server thread/INFO]: Preparing spawn area: 87%
-[11:32:07] [Server thread/INFO]: Changing view distance to 12, from 10
-[11:32:07] [Server thread/INFO]: Player563[local:E:a6b55de2] logged in with entity id 112 at (-193.5, 71.0, 260.5)
-[11:32:07] [Server thread/INFO]: Player563 joined the game
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:08] [Server thread/WARN]: Biome ID is out of bounds: 2563, defaulting to 0 (Ocean)
-[11:32:15] [Client thread/INFO]: Warning: Clientside chunk ticking took 117 ms
-[11:32:36] [Server thread/INFO]: Player563 has just earned the achievement [Taking Inventory]
-[11:32:36] [Client thread/INFO]: [CHAT] Player563 has just earned the achievement [Taking Inventory]
-[11:42:08] [Server thread/INFO]: Saving and pausing game...
-[11:42:08] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[11:42:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[11:42:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[11:42:09] [Client thread/INFO]: Stopping!
-[11:42:09] [Server thread/INFO]: Stopping server
-[11:42:09] [Server thread/INFO]: Saving players
-[11:42:09] [Server thread/INFO]: Saving worlds
-[11:42:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[11:42:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[11:42:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:01:39] [main/INFO]: Setting user: Player250
+[14:01:41] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:01:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:quantumupgrade
+[14:01:52] [Sound Library Loader/INFO]: Sound engine started
+[14:01:52] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[14:01:52] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[14:01:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:quantumupgrade
+[14:01:54] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[14:01:55] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[14:01:55] [Sound Library Loader/INFO]: Sound engine started
+[14:02:20] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:02:20] [Server thread/INFO]: Generating keypair
+[14:02:20] [Server thread/INFO]: Preparing start region for level 0
+[14:02:21] [Server thread/INFO]: Changing view distance to 12, from 10
+[14:02:21] [Server thread/INFO]: Player250[local:E:6b007d82] logged in with entity id 213 at (-322.76249998807907, 63.0, 226.59983909295053)
+[14:02:21] [Server thread/INFO]: Player250 joined the game
+[14:02:25] [Server thread/INFO]: Player250 has just earned the achievement [Taking Inventory]
+[14:02:25] [Client thread/INFO]: [CHAT] Player250 has just earned the achievement [Taking Inventory]
+[14:03:32] [Client thread/INFO]: Stopping!
+[14:03:32] [Server thread/INFO]: Stopping server
+[14:03:32] [Server thread/INFO]: Saving players
+[14:03:32] [Server thread/INFO]: Saving worlds
+[14:03:32] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:03:32] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:03:32] [Server thread/INFO]: Saving chunks for level 'New World'/The End
