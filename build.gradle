@@ -43,4 +43,9 @@ dependencies {
     	compile name: 'NotEnoughItems-1.7.10-1.0.5.120-universal-deobf'
     	compile name: 'codechickenlib-1.2.1-deobf'
 	compile name: 'gravisuite-1.7.10-2.0.3-deobf'
+	compile name: 'ablockofcharcoal-1.2-deobf'
+
+}
+runClient {
+    args += ['--username', 'Milla_AV']
 }

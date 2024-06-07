@@ -11,7 +11,7 @@ import static gravisuite.GraviSuite.proxy;
 
 @Mod(
         modid = "quantumupgrade",
-        name = "quantumupgrade",
+        name = "Quantum Upgrade",
         dependencies = "required-after:IC2; after:RedPowerCore",
         version = "1.0"
 )
