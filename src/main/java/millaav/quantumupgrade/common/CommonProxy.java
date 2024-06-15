@@ -4,7 +4,10 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.IGuiHandler;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import millaav.quantumupgrade.QuantumUpgrade;
 import millaav.quantumupgrade.api.MTAPI;
+import millaav.quantumupgrade.client.gui.GuiHandler;
 import millaav.quantumupgrade.common.registry.BlockRegistry;
 import millaav.quantumupgrade.common.registry.ItemRegistry;
 import millaav.quantumupgrade.common.tiles.TileMolecularTransformer;
@@ -22,6 +25,7 @@ public class CommonProxy implements IGuiHandler {
     }
 
     public void init(FMLInitializationEvent event){
+        NetworkRegistry.INSTANCE.registerGuiHandler(QuantumUpgrade.instance, new GuiHandler());
     }
 
     public void postInit(FMLPostInitializationEvent event){

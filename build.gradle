@@ -45,7 +45,6 @@ dependencies {
 	compile name: 'gravisuite-1.7.10-2.0.3-deobf'
 
 
-
 }
 runClient {
     args += ['--username', 'Milla_AV']
