@@ -14,12 +14,12 @@ import ic2.api.recipe.RecipeInputItemStack;
 import ic2.api.recipe.Recipes;
 import ic2.core.Ic2Items;
 import millaav.quantumupgrade.common.CommonProxy;
-import millaav.quantumupgrade.common.block.panels.BlockAdvSolarPanel;
-import millaav.quantumupgrade.common.block.panels.BlockMolecularTransformer;
-import millaav.quantumupgrade.common.items.ItemAdvSolarPanel;
-import millaav.quantumupgrade.common.items.ItemAdvanced;
-import millaav.quantumupgrade.common.items.ItemAdvancedSolarHelmet;
-import millaav.quantumupgrade.common.items.ItemMolecularTransformer;
+import millaav.quantumupgrade.common.block.panels.*;
+import millaav.quantumupgrade.common.info.ItemBlockAdmSP;
+import millaav.quantumupgrade.common.info.ItemBlockPhotonSP;
+import millaav.quantumupgrade.common.info.ItemBlockSSP;
+import millaav.quantumupgrade.common.info.ItemBlockSpSP;
+import millaav.quantumupgrade.common.items.*;
 import millaav.quantumupgrade.common.network.ASPPacketHandler;
 import millaav.quantumupgrade.common.tiles.*;
 import millaav.quantumupgrade.common.utils.MTRecipeConfig;
@@ -47,6 +47,30 @@ public class QuantumUpgrade {
 
     @Mod.Instance("QuantumUpgrade")
     public static QuantumUpgrade instance = new QuantumUpgrade();
+
+    public static int spectralpanelGenDay;
+    public static int spectralpanelGenNight;
+    public static int singularpanelGenDay;
+    public static int singularpanelOutput;
+    public static int spectralpanelOutput;
+    public static int singularpanelGenNight;
+    public static int adminpanelGenDay;
+    public static int adminpanelGenNight;
+    public static int AdminpanelStorage;
+    public static int AdminpanelOutput;
+    public static int photonicpanelGenDay;
+    public static int photonicpanelGenNight;
+    public static int photonicpanelOutput;
+    public static int photonicpanelStorage;
+    public static Item enderquantumcomponent;
+    public static Item solarsplitter;
+    public static Item bluecomponent;
+    public static Item greencomponent;
+    public static Item redcomponent;
+    public static final Block BlockSingularSP = new BlockSuperSP();
+    public static final Block BlockSpectralSP = new BlockSpectralSP();
+    public static final Block BlockAdminSP = new BlockAdminSP();
+    public static final Block BlockPhotonSP = new BlockPhotonSP();
 
     public static Block blockAdvSolarPanel;
     public static Block blockMolecularTransformer;
@@ -91,7 +115,6 @@ public class QuantumUpgrade {
     public static int qgbaseProduction;
     public static int qgbaseMaxPacketSize;
     public static int blockMolecularTransformerRenderID;
-    public static CreativeTabs ic2Tab;
     private static boolean disableAdvancedSolarHelmetRecipe;
     private static boolean disableHybridSolarHelmetRecipe;
     private static boolean disableUltimateSolarHelmetRecipe;
@@ -116,9 +139,24 @@ public class QuantumUpgrade {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         Configuration config = new Configuration(event.getSuggestedConfigurationFile());
-
         try {
             config.load();
+            configFileName = event.getSuggestedConfigurationFile().getAbsolutePath();
+            spectralpanelGenDay = config.get("general", "SpectralSPGenDay", 32768).getInt(32768);
+            spectralpanelGenNight = config.get("general", "SpectralSPGenNight", 20000).getInt(20000);
+            singularpanelGenDay = config.get("general", "SingularSPGenDay", 262144).getInt(262144);
+            singularpanelGenNight = config.get("general", "SingularSPGenNight", 196608).getInt(196608);
+            singularpanelOutput = config.get("general", "SingularSPOutput", 262144).getInt(262144);
+            spectralpanelOutput = config.get("general", "SpectralSPOutput", 32768).getInt(32768);
+            adminpanelGenDay = config.get("general", "AdminPanelGenDay", 1048576).getInt(1048576);
+            adminpanelGenNight = config.get("general", "AdminPanelGenNight", 1048576).getInt(1048576);
+            AdminpanelStorage = config.get("general", "AdminPanelStorage", 1000000000).getInt(1000000000);
+            AdminpanelOutput = config.get("general", "AdminPanelOutput", 1048576).getInt(1048576);
+            photonicpanelGenDay = config.get("general", "PhotonicPanelGenDay", 1000000000).getInt(1000000000);
+            photonicpanelGenNight = config.get("general", "PhotonicPanelGenNight", 1000000000).getInt(1000000000);
+            photonicpanelOutput = config.get("general", "PhotonicPanelOutput", 1000000000).getInt(1000000000);
+            photonicpanelStorage = config.get("general", "PhotonicPanelStorage", 1000000000).getInt(1000000000);
+
             configFileName = event.getSuggestedConfigurationFile().getAbsolutePath();
             advGenDay = config.get("general", "AdvancedSPGenDay", 8).getInt(8);
             advGenNight = config.get("general", "AdvancedSPGenNight", 1).getInt(1);
@@ -151,12 +189,27 @@ public class QuantumUpgrade {
             enableHardRecipes = config.get("recipes settings", "Enable hard recipes", true).getBoolean(true);
         } catch (Exception var7) {
             Exception e = var7;
-            System.out.println("[AdvancedSolarPanels] error occurred parsing config file");
+            System.out.println("[QuantumUpgrade] error occurred parsing config file");
             throw new RuntimeException(e);
         } finally {
             config.save();
         }
 
+
+        GameRegistry.registerBlock(BlockSingularSP, ItemBlockSSP.class, "SingularSolarPanel");
+        GameRegistry.registerBlock(BlockSpectralSP, ItemBlockSpSP.class, "SpectralSolarPanel");
+        GameRegistry.registerBlock(BlockAdminSP, ItemBlockAdmSP.class, "AdminSolarPanel");
+        GameRegistry.registerBlock(BlockPhotonSP, ItemBlockPhotonSP.class, "PhotonicSolarPanel");
+        enderquantumcomponent = new millaav.quantumupgrade.common.items.ItemEnderQuantumComponent();
+        GameRegistry.registerItem(enderquantumcomponent, "enderquantumcomponent");
+        solarsplitter = new millaav.quantumupgrade.common.items.ItemSpectralLightSplitter();
+        GameRegistry.registerItem(solarsplitter, "solarsplitter");
+        bluecomponent = new millaav.quantumupgrade.common.items.ItemBlueSpectralComponent();
+        greencomponent = new millaav.quantumupgrade.common.items.ItemGreenSpectralComponent();
+        redcomponent = new ItemRedSpectralComponent();
+        GameRegistry.registerItem(bluecomponent, "bluecomponent");
+        GameRegistry.registerItem(greencomponent, "greencomponent");
+        GameRegistry.registerItem(redcomponent, "redcomponent");
 
         blockMolecularTransformer = new BlockMolecularTransformer();
         GameRegistry.registerBlock(blockMolecularTransformer, ItemMolecularTransformer.class, "BlockMolecularTransformer");
@@ -205,8 +258,9 @@ public class QuantumUpgrade {
         OreDictionary.registerOre("craftingMolecularTransformer", itemMolecularTransformer);
         proxy.registerRenderers();
         proxy.load();
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
         MTRecipeConfig.doDebug();
+
+
     }
 
     public static void addLog(String logLine) {
@@ -221,7 +275,10 @@ public class QuantumUpgrade {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
-        proxy.init(event);
+        GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TileSingularSolarPanel.class, "SingularSolarPanel");
+        GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TileSpectralSolarPanel.class, "SpectralSolarPanel");
+        GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TileAdminSolarPanel.class, "AdminSolarPanel");
+        GameRegistry.registerTileEntity(TilePhotonicSolarPanel.class, "PhotonicSolarPanel");
     }
 
     @Mod.EventHandler
@@ -230,7 +287,7 @@ public class QuantumUpgrade {
     }
 
 
-    public static CreativeTabs tabQU = new CreativeTabs("tavQU")
+    public static CreativeTabs tabQU = new CreativeTabs("tabQU")
     {
         @Override
         public ItemStack getIconItemStack()

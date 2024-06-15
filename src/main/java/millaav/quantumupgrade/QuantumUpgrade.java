@@ -14,9 +14,7 @@ import ic2.api.recipe.RecipeInputItemStack;
 import ic2.api.recipe.Recipes;
 import ic2.core.Ic2Items;
 import millaav.quantumupgrade.common.CommonProxy;
-import millaav.quantumupgrade.common.block.panels.BlockAdvSolarPanel;
-import millaav.quantumupgrade.common.block.panels.BlockMolecularTransformer;
-import millaav.quantumupgrade.common.block.panels.BlockSuperSP;
+import millaav.quantumupgrade.common.block.panels.*;
 import millaav.quantumupgrade.common.info.ItemBlockAdmSP;
 import millaav.quantumupgrade.common.info.ItemBlockPhotonSP;
 import millaav.quantumupgrade.common.info.ItemBlockSSP;
@@ -117,7 +115,6 @@ public class QuantumUpgrade {
     public static int qgbaseProduction;
     public static int qgbaseMaxPacketSize;
     public static int blockMolecularTransformerRenderID;
-    public static CreativeTabs ic2Tab;
     private static boolean disableAdvancedSolarHelmetRecipe;
     private static boolean disableHybridSolarHelmetRecipe;
     private static boolean disableUltimateSolarHelmetRecipe;
@@ -142,12 +139,8 @@ public class QuantumUpgrade {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         Configuration config = new Configuration(event.getSuggestedConfigurationFile());
-
         try {
             config.load();
-
-
-
             configFileName = event.getSuggestedConfigurationFile().getAbsolutePath();
             spectralpanelGenDay = config.get("general", "SpectralSPGenDay", 32768).getInt(32768);
             spectralpanelGenNight = config.get("general", "SpectralSPGenNight", 20000).getInt(20000);
@@ -207,12 +200,12 @@ public class QuantumUpgrade {
         GameRegistry.registerBlock(BlockSpectralSP, ItemBlockSpSP.class, "SpectralSolarPanel");
         GameRegistry.registerBlock(BlockAdminSP, ItemBlockAdmSP.class, "AdminSolarPanel");
         GameRegistry.registerBlock(BlockPhotonSP, ItemBlockPhotonSP.class, "PhotonicSolarPanel");
-        enderquantumcomponent = new ItemEnderQuantumComponent();
+        enderquantumcomponent = new millaav.quantumupgrade.common.items.ItemEnderQuantumComponent();
         GameRegistry.registerItem(enderquantumcomponent, "enderquantumcomponent");
-        solarsplitter = new ItemSpectralLightSplitter();
+        solarsplitter = new millaav.quantumupgrade.common.items.ItemSpectralLightSplitter();
         GameRegistry.registerItem(solarsplitter, "solarsplitter");
-        bluecomponent = new ItemBlueSpectralComponent();
-        greencomponent = new ItemGreenSpectralComponent();
+        bluecomponent = new millaav.quantumupgrade.common.items.ItemBlueSpectralComponent();
+        greencomponent = new millaav.quantumupgrade.common.items.ItemGreenSpectralComponent();
         redcomponent = new ItemRedSpectralComponent();
         GameRegistry.registerItem(bluecomponent, "bluecomponent");
         GameRegistry.registerItem(greencomponent, "greencomponent");
@@ -265,8 +258,8 @@ public class QuantumUpgrade {
         OreDictionary.registerOre("craftingMolecularTransformer", itemMolecularTransformer);
         proxy.registerRenderers();
         proxy.load();
-        NetworkRegistry.INSTANCE.registerGuiHandler(this, proxy);
         MTRecipeConfig.doDebug();
+
 
     }
 
@@ -282,11 +275,10 @@ public class QuantumUpgrade {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
-        proxy.init(event);
         GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TileSingularSolarPanel.class, "SingularSolarPanel");
         GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TileSpectralSolarPanel.class, "SpectralSolarPanel");
         GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TileAdminSolarPanel.class, "AdminSolarPanel");
-        GameRegistry.registerTileEntity(millaav.quantumupgrade.common.tiles.TilePhotonicSolarPanel.class, "PhotonicSolarPanel");
+        GameRegistry.registerTileEntity(TilePhotonicSolarPanel.class, "PhotonicSolarPanel");
     }
 
     @Mod.EventHandler
@@ -295,7 +287,7 @@ public class QuantumUpgrade {
     }
 
 
-    public static CreativeTabs tabQU = new CreativeTabs("tavQU")
+    public static CreativeTabs tabQU = new CreativeTabs("tabQU")
     {
         @Override
         public ItemStack getIconItemStack()

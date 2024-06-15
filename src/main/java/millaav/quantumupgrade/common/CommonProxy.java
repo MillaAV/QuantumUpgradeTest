@@ -25,6 +25,8 @@ public class CommonProxy implements IGuiHandler {
     }
 
     public void init(FMLInitializationEvent event){
+        ItemRegistry.init();
+        BlockRegistry.init();
         NetworkRegistry.INSTANCE.registerGuiHandler(QuantumUpgrade.instance, new GuiHandler());
     }
 
