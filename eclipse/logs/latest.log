@@ -1,25 +1,62 @@
-[22:28:24] [main/INFO]: Setting user: Milla_AV
-[22:28:26] [Client thread/INFO]: LWJGL Version: 2.9.1
-[22:28:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:Quantum Upgrade
-[22:28:39] [Sound Library Loader/INFO]: Sound engine started
-[22:28:39] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[22:28:39] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[22:28:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:Quantum Upgrade
-[22:28:41] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
-[22:28:41] [Client thread/INFO]: Created: 512x512 textures/items-atlas
-[22:28:42] [Sound Library Loader/INFO]: Sound engine started
-[22:28:48] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[22:28:48] [Server thread/INFO]: Generating keypair
-[22:28:48] [Server thread/INFO]: Preparing start region for level 0
-[22:28:49] [Server thread/INFO]: Changing view distance to 12, from 10
-[22:28:49] [Server thread/INFO]: Milla_AV[local:E:6b999a22] logged in with entity id 343 at (-97.94480396126482, 73.0, 240.36960516903375)
-[22:28:49] [Server thread/INFO]: Milla_AV joined the game
-[22:29:05] [Client thread/INFO]: Stopping!
-[22:29:05] [Server thread/INFO]: Stopping server
-[22:29:05] [Server thread/INFO]: Saving players
-[22:29:05] [Server thread/INFO]: Saving worlds
-[22:29:05] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[22:29:05] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[22:29:05] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[22:29:06] [Client Shutdown Thread/INFO]: Stopping server
-[22:29:06] [Client Shutdown Thread/INFO]: Saving players
+[13:39:23] [main/INFO]: Setting user: Milla_AV
+[13:39:24] [Client thread/INFO]: LWJGL Version: 2.9.1
+[13:39:32] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:Quantum Upgrade
+[13:39:35] [Sound Library Loader/INFO]: Sound engine started
+[13:39:35] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[13:39:35] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[13:39:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:IndustrialCraft 2, FMLFileResourcePack:LuckyRecipeMaker, FMLFileResourcePack:MineTweaker 3, FMLFileResourcePack:Graviation Suite, FMLFileResourcePack:Quantum Upgrade
+[13:39:37] [Client thread/INFO]: Created: 1024x512 textures/blocks-atlas
+[13:39:37] [Client thread/INFO]: Created: 512x512 textures/items-atlas
+[13:39:38] [Sound Library Loader/INFO]: Sound engine started
+[13:39:47] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[13:39:47] [Server thread/INFO]: Generating keypair
+[13:39:47] [Server thread/INFO]: Preparing start region for level 0
+[13:39:48] [Server thread/INFO]: Changing view distance to 12, from 10
+[13:39:54] [Server thread/INFO]: Stopping server
+[13:39:54] [Server thread/INFO]: Saving players
+[13:39:54] [Server thread/INFO]: Saving worlds
+[13:39:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:39:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:39:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:39:55] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[13:39:55] [Server thread/INFO]: Generating keypair
+[13:39:55] [Server thread/INFO]: Preparing start region for level 0
+[13:39:55] [Server thread/INFO]: Changing view distance to 12, from 10
+[13:39:56] [Server thread/INFO]: Milla_AV[local:E:e44ea1e9] logged in with entity id 732 at (-99.97214729504309, 70.0, 233.40753357835743)
+[13:39:56] [Server thread/INFO]: Milla_AV joined the game
+[13:43:41] [Server thread/INFO]: Saving and pausing game...
+[13:43:41] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:43:41] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:43:41] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[13:43:49] [Server thread/INFO]: [Milla_AV: Given [blockAdvancedSolarPanel.name] * 64 to Milla_AV]
+[13:43:49] [Client thread/INFO]: [CHAT] Given [blockAdvancedSolarPanel.name] * 64 to Milla_AV
+[13:43:50] [Server thread/INFO]: [Milla_AV: Given [blockHybridSolarPanel.name] * 64 to Milla_AV]
+[13:43:50] [Client thread/INFO]: [CHAT] Given [blockHybridSolarPanel.name] * 64 to Milla_AV
+[13:43:50] [Server thread/INFO]: [Milla_AV: Given [blockUltimateSolarPanel.name] * 64 to Milla_AV]
+[13:43:50] [Client thread/INFO]: [CHAT] Given [blockUltimateSolarPanel.name] * 64 to Milla_AV
+[13:43:51] [Server thread/INFO]: [Milla_AV: Given [blockQuantumSolarPanel.name] * 64 to Milla_AV]
+[13:43:51] [Client thread/INFO]: [CHAT] Given [blockQuantumSolarPanel.name] * 64 to Milla_AV
+[13:45:36] [Server thread/INFO]: Saving and pausing game...
+[13:45:36] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[13:45:36] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[13:45:36] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:39:54] [Server thread/INFO]: Saving and pausing game...
+[14:39:54] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:39:54] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:39:54] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:40:11] [Server thread/INFO]: Saving and pausing game...
+[14:40:11] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:40:11] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:40:11] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:40:51] [Server thread/INFO]: Saving and pausing game...
+[14:40:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:40:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:40:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:41:38] [Server thread/INFO]: Saving and pausing game...
+[14:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:41:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:46:29] [Server thread/INFO]: Saving and pausing game...
+[14:46:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:46:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:46:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End

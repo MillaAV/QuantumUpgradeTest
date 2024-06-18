@@ -45,8 +45,8 @@ public class QuantumUpgrade {
             serverSide = "millaav.quantumupgrade.common.CommonProxy")
     public static CommonProxy proxy;
 
-    @Mod.Instance("QuantumUpgrade")
-    public static QuantumUpgrade instance = new QuantumUpgrade();
+    @Mod.Instance("quantumupgrade")
+    public static QuantumUpgrade instance;
 
     public static int spectralpanelGenDay;
     public static int spectralpanelGenNight;
@@ -271,6 +271,7 @@ public class QuantumUpgrade {
     @Mod.EventHandler
     public void load(FMLInitializationEvent event) {
         ASPPacketHandler.load();
+        proxy.init(event);
     }
 
     @Mod.EventHandler
