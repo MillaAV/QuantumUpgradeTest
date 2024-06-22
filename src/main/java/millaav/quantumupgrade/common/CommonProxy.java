@@ -5,11 +5,13 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.IGuiHandler;
 import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
 import millaav.quantumupgrade.QuantumUpgrade;
 import millaav.quantumupgrade.api.MTAPI;
 import millaav.quantumupgrade.client.gui.GuiHandler;
 import millaav.quantumupgrade.common.registry.BlockRegistry;
 import millaav.quantumupgrade.common.registry.ItemRegistry;
+import millaav.quantumupgrade.common.tiles.TileElectricMFN;
 import millaav.quantumupgrade.common.tiles.TileMolecularTransformer;
 import millaav.quantumupgrade.common.tiles.TileQGenerator;
 import millaav.quantumupgrade.common.tiles.TileSolarPanel;
@@ -28,6 +30,7 @@ public class CommonProxy implements IGuiHandler {
         ItemRegistry.init();
         BlockRegistry.init();
         NetworkRegistry.INSTANCE.registerGuiHandler(QuantumUpgrade.instance, new GuiHandler());
+        GameRegistry.registerTileEntity(TileElectricMFN.class, "MFN");
     }
 
     public void postInit(FMLPostInitializationEvent event){

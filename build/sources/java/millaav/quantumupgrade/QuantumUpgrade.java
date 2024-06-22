@@ -115,6 +115,7 @@ public class QuantumUpgrade {
     public static int qgbaseProduction;
     public static int qgbaseMaxPacketSize;
     public static int blockMolecularTransformerRenderID;
+    public static Block TileElectricMFN;
     private static boolean disableAdvancedSolarHelmetRecipe;
     private static boolean disableHybridSolarHelmetRecipe;
     private static boolean disableUltimateSolarHelmetRecipe;
@@ -194,7 +195,6 @@ public class QuantumUpgrade {
         } finally {
             config.save();
         }
-
 
         GameRegistry.registerBlock(BlockSingularSP, ItemBlockSSP.class, "SingularSolarPanel");
         GameRegistry.registerBlock(BlockSpectralSP, ItemBlockSpSP.class, "SpectralSolarPanel");
